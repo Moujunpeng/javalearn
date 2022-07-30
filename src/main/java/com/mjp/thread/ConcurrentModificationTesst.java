@@ -22,6 +22,7 @@ public class ConcurrentModificationTesst {
 
             int finalI = i;
             executorService.submit(()->{
+                System.out.println("add param is " + finalI);
                 list.add(finalI);
             });
 
