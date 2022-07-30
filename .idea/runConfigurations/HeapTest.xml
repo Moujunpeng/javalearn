@@ -1,0 +1,16 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="HeapTest" type="Application" factoryName="Application" nameIsGenerated="true">
+    <option name="MAIN_CLASS_NAME" value="com.mjp.jvm.HeapTest" />
+    <module name="processcreate" />
+    <option name="VM_PARAMETERS" value="-Xms20m -Xmx20m -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=D:\\mjp1\\programworkspace\\springbootApplication\\outputheapdump_1.txt" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="com.mjp.nio.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
