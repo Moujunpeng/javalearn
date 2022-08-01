@@ -22,6 +22,8 @@ public class ReferenceCountingGC {
 
         System.gc();
 
+
+
         //Thread.sleep(100000000);
     }
 
