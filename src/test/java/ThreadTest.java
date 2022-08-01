@@ -13,4 +13,18 @@ public class ThreadTest {
 
     }
 
+    @Test
+    public void test01(){
+
+        Thread thread = new Thread(() -> {
+            while (true){
+//                Thread.yield();
+            }
+        });
+
+        thread.start();
+        thread.interrupt();
+
+    }
+
 }
