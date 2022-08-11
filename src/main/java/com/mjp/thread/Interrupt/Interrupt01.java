@@ -32,7 +32,7 @@ public class Interrupt01 {
         });
 
         thread.start();
-        Thread.sleep(2000);
+        Thread.sleep(10000000);
         thread.interrupt();
     }
 
