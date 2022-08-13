@@ -12,6 +12,7 @@ public class minorgc {
         mem2 = new byte[2 * _1MB];
         mem3 = new byte[2 * _1MB];
         mem4 = new byte[4 * _1MB];
+
     }
 
 }
