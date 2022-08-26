@@ -15,12 +15,10 @@ public class ReentrantLockTest {
 
     public static void main(String[] args) throws InterruptedException {
 
-
-        for(int i = 0;i < 100;i++){
+        for(int i = 0;i < 4;i++){
             executor.submit(new ThreadDemo(i));
         }
 
-        Thread.sleep(10000);
     }
 
     static class ThreadDemo implements Runnable{
@@ -36,6 +34,11 @@ public class ReentrantLockTest {
 
             for(int i = 0;i < 2;i++){
                 System.out.println("线程 " + id + "拿锁");
+//                try {
+//                    Thread.sleep(1000);
+//                } catch (InterruptedException e) {
+//                    e.printStackTrace();
+//                }
                 lock.lock();
                 System.out.println("线程 " + id + "拿到锁");
             }
